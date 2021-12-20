@@ -23,7 +23,7 @@
             android:id="@+id/iv_background"
             android:layout_width="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/image"
+            tools:src="@drawable/image"
             android:layout_height="match_parent"/>
 
         <com.tolerance.kidsdrawingapp.DrawingView
