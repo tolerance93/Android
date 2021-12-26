@@ -1,5 +1,6 @@
 package com.tolerance.a7minuesworkout
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
@@ -17,11 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         //val flStartButton : FrameLayout = findViewById(R.id.flStart)
         binding?.flStart?.setOnClickListener {
-            Toast.makeText(
-                this@MainActivity,
-                "Clicked",
-                Toast.LENGTH_SHORT
-            ).show()
+            val intent = Intent(this, ExerciseActivity::class.java)
+            startActivity(intent)
         }
     }
 
